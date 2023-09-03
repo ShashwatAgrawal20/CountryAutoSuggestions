@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        #results {
+            border: 1px dotted #ccc;
+            padding: 3px;
+        }
+        #results ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        #results ul li {
+            padding: 5px 0;
+        }
+        #results ul li:hover {
+            background: #eee;
+        }
+    </style>
+    <body>
+        <h1>A shitty country autocomplete/suggestions</h1>
+        <p> Hey, I am not a front-end developer, but it's a gorgeous design, isn't it?</p>
+        <p> I know it's a shitty code, but hey, it is what it is</p>
+        <form autocomplete="off">
+            <input type="text" name="userInput" id="userInput" onKeyUp="displaySuggestions(this.value)" placeholder="Enter a country name" />
+            <div id="results"></div>
+        </form>
+    </body>
+    <script src="./index.js">
+
+    </script>
+</html>
